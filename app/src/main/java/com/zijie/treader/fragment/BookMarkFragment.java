@@ -21,8 +21,7 @@ import org.litepal.crud.DataSupport;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
+import butterknife.BindView;
 
 /**
  * Created by Administrator on 2016/8/31 0031.
@@ -30,7 +29,7 @@ import butterknife.ButterKnife;
 public class BookMarkFragment extends BaseFragment {
     public static final String ARGUMENT = "argument";
 
-    @Bind(R.id.lv_bookmark)
+    @BindView(R.id.lv_bookmark)
     ListView lv_bookmark;
 
     private String bookpath;

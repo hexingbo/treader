@@ -2,12 +2,7 @@ package com.zijie.treader;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.graphics.Bitmap;
-import android.graphics.Color;
 import android.graphics.Typeface;
-import android.util.Log;
-
-import com.zijie.treader.util.DisplayUtils;
 
 /**
  * Created by Administrator on 2016/7/18 0018.

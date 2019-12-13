@@ -3,19 +3,15 @@ package com.zijie.treader;
 import android.content.Context;
 import android.os.Environment;
 
-import com.umeng.analytics.MobclickAgent;
-import com.zijie.treader.db.BookList;
 import com.zijie.treader.util.PageFactory;
 
 import org.litepal.LitePalApplication;
-import org.litepal.crud.DataSupport;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.List;
 
 /**
  * Created by Administrator on 2016/7/8 0008.

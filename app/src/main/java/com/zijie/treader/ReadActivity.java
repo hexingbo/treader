@@ -65,7 +65,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -77,41 +77,41 @@ public class ReadActivity extends BaseActivity implements SpeechSynthesizerListe
     private final static String EXTRA_BOOK = "bookList";
     private final static int MESSAGE_CHANGEPROGRESS = 1;
 
-    @Bind(R.id.bookpage)
+    @BindView(R.id.bookpage)
     PageWidget bookpage;
-//    @Bind(R.id.btn_return)
+//    @BindView(R.id.btn_return)
 //    ImageButton btn_return;
-//    @Bind(R.id.ll_top)
+//    @BindView(R.id.ll_top)
 //    LinearLayout ll_top;
-    @Bind(R.id.tv_progress)
+    @BindView(R.id.tv_progress)
     TextView tv_progress;
-    @Bind(R.id.rl_progress)
+    @BindView(R.id.rl_progress)
     RelativeLayout rl_progress;
-    @Bind(R.id.tv_pre)
+    @BindView(R.id.tv_pre)
     TextView tv_pre;
-    @Bind(R.id.sb_progress)
+    @BindView(R.id.sb_progress)
     SeekBar sb_progress;
-    @Bind(R.id.tv_next)
+    @BindView(R.id.tv_next)
     TextView tv_next;
-    @Bind(R.id.tv_directory)
+    @BindView(R.id.tv_directory)
     TextView tv_directory;
-    @Bind(R.id.tv_dayornight)
+    @BindView(R.id.tv_dayornight)
     TextView tv_dayornight;
-    @Bind(R.id.tv_pagemode)
+    @BindView(R.id.tv_pagemode)
     TextView tv_pagemode;
-    @Bind(R.id.tv_setting)
+    @BindView(R.id.tv_setting)
     TextView tv_setting;
-    @Bind(R.id.bookpop_bottom)
+    @BindView(R.id.bookpop_bottom)
     LinearLayout bookpop_bottom;
-    @Bind(R.id.rl_bottom)
+    @BindView(R.id.rl_bottom)
     RelativeLayout rl_bottom;
-    @Bind(R.id.tv_stop_read)
+    @BindView(R.id.tv_stop_read)
     TextView tv_stop_read;
-    @Bind(R.id.rl_read_bottom)
+    @BindView(R.id.rl_read_bottom)
     RelativeLayout rl_read_bottom;
-    @Bind(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar toolbar;
-    @Bind(R.id.appbar)
+    @BindView(R.id.appbar)
     AppBarLayout appbar;
 
     private Config config;

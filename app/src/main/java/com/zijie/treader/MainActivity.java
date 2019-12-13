@@ -4,15 +4,11 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
-import android.graphics.Bitmap;
 import android.graphics.PixelFormat;
 import android.graphics.Typeface;
 import android.net.Uri;
-import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -28,12 +24,10 @@ import android.view.animation.Animation;
 import android.widget.AbsoluteLayout;
 import android.widget.AdapterView;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.umeng.analytics.MobclickAgent;
-import com.umeng.fb.FeedbackAgent;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 import com.zijie.treader.adapter.ShelfAdapter;
@@ -49,31 +43,27 @@ import com.zijie.treader.view.DragGridView;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.litepal.crud.DataSupport;
-import org.litepal.tablemanager.Connector;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
+import butterknife.BindView;
 import okhttp3.Call;
-import okhttp3.Request;
 
 public class MainActivity extends BaseActivity
         implements NavigationView.OnNavigationItemSelectedListener, Animation.AnimationListener  {
 
-    @Bind(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar toolbar;
-    @Bind(R.id.fab)
+    @BindView(R.id.fab)
     FloatingActionButton fab;
-    @Bind(R.id.nav_view)
+    @BindView(R.id.nav_view)
     NavigationView navigationView;
-    @Bind(R.id.drawer_layout)
+    @BindView(R.id.drawer_layout)
     DrawerLayout drawer;
-    @Bind(R.id.bookShelf)
+    @BindView(R.id.bookShelf)
     DragGridView bookShelf;
 
 
@@ -120,9 +110,9 @@ public class MainActivity extends BaseActivity
         //友盟统计
         MobclickAgent.setScenarioType(this, MobclickAgent.EScenarioType.E_UM_NORMAL);
         MobclickAgent.enableEncrypt(true);//6.0.0版本及以后
-        //自动提醒反馈建议
-        FeedbackAgent agent = new FeedbackAgent(this);
-        agent.sync();
+//        //自动提醒反馈建议
+//        FeedbackAgent agent = new FeedbackAgent(this);
+//        agent.sync();
 
         config = Config.getInstance();
         // 删除窗口背景
@@ -449,8 +439,8 @@ public class MainActivity extends BaseActivity
         int id = item.getItemId();
 
        if (id == R.id.nav_feedback) {
-           FeedbackAgent agent = new FeedbackAgent(this);
-           agent.startFeedbackActivity();
+//           FeedbackAgent agent = new FeedbackAgent(this);
+//           agent.startFeedbackActivity();
 
        } else if (id == R.id.nav_checkupdate) {
            checkUpdate(true);

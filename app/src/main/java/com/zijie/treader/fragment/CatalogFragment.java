@@ -15,8 +15,7 @@ import com.zijie.treader.util.PageFactory;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
+import butterknife.BindView;
 
 /**
  * Created by Administrator on 2016/8/31 0031.
@@ -27,7 +26,7 @@ public class CatalogFragment extends BaseFragment {
     private PageFactory pageFactory;
     ArrayList<BookCatalogue> catalogueList = new ArrayList<>();
 
-    @Bind(R.id.lv_catalogue)
+    @BindView(R.id.lv_catalogue)
     ListView lv_catalogue;
 
     @Override

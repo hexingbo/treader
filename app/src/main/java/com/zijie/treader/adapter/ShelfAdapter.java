@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -105,9 +105,9 @@ public class ShelfAdapter extends BaseAdapter implements DragGridListener {
     }
 
     static class ViewHolder {
-        @Bind(R.id.ib_close)
+        @BindView(R.id.ib_close)
         ImageButton deleteItem_IB;
-        @Bind(R.id.tv_name)
+        @BindView(R.id.tv_name)
         TextView name;
 
         public ViewHolder(View view) {

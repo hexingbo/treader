@@ -17,7 +17,7 @@ import com.zijie.treader.R;
 import com.zijie.treader.util.DisplayUtils;
 import com.zijie.treader.view.CircleImageView;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -26,41 +26,41 @@ import butterknife.OnClick;
  */
 public class SettingDialog extends Dialog {
 
-    @Bind(R.id.tv_dark)
+    @BindView(R.id.tv_dark)
     TextView tv_dark;
-    @Bind(R.id.sb_brightness)
+    @BindView(R.id.sb_brightness)
     SeekBar sb_brightness;
-    @Bind(R.id.tv_bright)
+    @BindView(R.id.tv_bright)
     TextView tv_bright;
-    @Bind(R.id.tv_xitong)
+    @BindView(R.id.tv_xitong)
     TextView tv_xitong;
-    @Bind(R.id.tv_subtract)
+    @BindView(R.id.tv_subtract)
     TextView tv_subtract;
-    @Bind(R.id.tv_size)
+    @BindView(R.id.tv_size)
     TextView tv_size;
-    @Bind(R.id.tv_add)
+    @BindView(R.id.tv_add)
     TextView tv_add;
-    @Bind(R.id.tv_qihei)
+    @BindView(R.id.tv_qihei)
     TextView tv_qihei;
-    @Bind(R.id.tv_default)
+    @BindView(R.id.tv_default)
     TextView tv_default;
-    @Bind(R.id.iv_bg_default)
+    @BindView(R.id.iv_bg_default)
     CircleImageView iv_bg_default;
-    @Bind(R.id.iv_bg_1)
+    @BindView(R.id.iv_bg_1)
     CircleImageView iv_bg1;
-    @Bind(R.id.iv_bg_2)
+    @BindView(R.id.iv_bg_2)
     CircleImageView iv_bg2;
-    @Bind(R.id.iv_bg_3)
+    @BindView(R.id.iv_bg_3)
     CircleImageView iv_bg3;
-    @Bind(R.id.iv_bg_4)
+    @BindView(R.id.iv_bg_4)
     CircleImageView iv_bg4;
-    @Bind(R.id.tv_size_default)
+    @BindView(R.id.tv_size_default)
     TextView tv_size_default;
-    @Bind(R.id.tv_fzxinghei)
+    @BindView(R.id.tv_fzxinghei)
     TextView tv_fzxinghei;
-    @Bind(R.id.tv_fzkatong)
+    @BindView(R.id.tv_fzkatong)
     TextView tv_fzkatong;
-    @Bind(R.id.tv_bysong)
+    @BindView(R.id.tv_bysong)
     TextView tv_bysong;
 
 

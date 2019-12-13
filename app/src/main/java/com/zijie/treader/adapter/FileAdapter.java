@@ -24,7 +24,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -182,15 +182,15 @@ public  class FileAdapter extends BaseAdapter {
     }
 
     static class ViewHolder {
-        @Bind(R.id.tv_file_text)
+        @BindView(R.id.tv_file_text)
         TextView textView;
-        @Bind(R.id.tv_file_text_size)
+        @BindView(R.id.tv_file_text_size)
         TextView textSize;
-        @Bind(R.id.iv_file_icon)
+        @BindView(R.id.iv_file_icon)
         ImageView fileIcon;
-        @Bind(R.id.cb_file_image)
+        @BindView(R.id.cb_file_image)
         CheckBox checkBox;
-        @Bind(R.id.ll_file_lin)
+        @BindView(R.id.ll_file_lin)
         LinearLayout linearLayout;
 
         public ViewHolder(View view) {

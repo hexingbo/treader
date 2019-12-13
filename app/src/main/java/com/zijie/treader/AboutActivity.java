@@ -1,6 +1,5 @@
 package com.zijie.treader;
 
-import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.CoordinatorLayout;
@@ -14,8 +13,7 @@ import android.widget.TextView;
 import com.zijie.treader.base.BaseActivity;
 import com.zijie.treader.util.CommonUtil;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
+import butterknife.BindView;
 import butterknife.OnClick;
 
 /**
@@ -24,17 +22,17 @@ import butterknife.OnClick;
 public class AboutActivity extends BaseActivity {
 
 
-    @Bind(R.id.bannner)
+    @BindView(R.id.bannner)
     ImageView bannner;
-    @Bind(R.id.tv_version)
+    @BindView(R.id.tv_version)
     TextView tvVersion;
-    @Bind(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar toolbar;
-    @Bind(R.id.toolbar_layout)
+    @BindView(R.id.toolbar_layout)
     CollapsingToolbarLayout toolbarLayout;
-    @Bind(R.id.app_bar)
+    @BindView(R.id.app_bar)
     AppBarLayout appBar;
-    @Bind(R.id.coord)
+    @BindView(R.id.coord)
     CoordinatorLayout coord;
 
     @Override

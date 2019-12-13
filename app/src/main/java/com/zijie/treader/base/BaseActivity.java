@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.umeng.analytics.MobclickAgent;
 
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 /**
  * Created by Administrator on 2016/7/8 0008.
@@ -21,6 +22,7 @@ import butterknife.ButterKnife;
 public abstract class BaseActivity extends AppCompatActivity {
 
     private ProgressDialog mProgressDialog;
+    private Unbinder unbinder;
 
     /**
      * 初始化布局
@@ -37,8 +39,8 @@ public abstract class BaseActivity extends AppCompatActivity {
 
         setContentView(getLayoutRes());
         // 初始化View注入
-        ButterKnife.bind(this);
-        
+        unbinder = ButterKnife.bind(this);
+
         initData();
         initListener();
     }
@@ -58,7 +60,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        ButterKnife.unbind(this);
+        if (unbinder != null) unbinder.unbind();
     }
 
     public void showProgress(boolean flag, String message) {

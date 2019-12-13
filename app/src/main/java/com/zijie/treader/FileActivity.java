@@ -1,28 +1,17 @@
 package com.zijie.treader;
 
 import android.Manifest;
-import android.app.Activity;
-import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.database.Cursor;
 import android.os.AsyncTask;
 import android.os.Build;
-import android.os.Bundle;
 import android.os.Environment;
-import android.os.Handler;
-import android.os.Message;
 import android.support.annotation.NonNull;
-import android.support.design.widget.AppBarLayout;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.CompoundButton;
-import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zijie.treader.adapter.FileAdapter;
@@ -34,30 +23,25 @@ import com.zijie.treader.util.Fileutil;
 import org.litepal.crud.DataSupport;
 
 import java.io.File;
-import java.io.FileFilter;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Stack;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
+import butterknife.BindView;
 
 /**
  * Created by Administrator on 2016/7/11 0011.
  */
 public class FileActivity extends BaseActivity {
 
-    @Bind(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar toolbar;
-    @Bind(R.id.btn_choose_all)
+    @BindView(R.id.btn_choose_all)
     Button btnChooseAll;
-    @Bind(R.id.btn_delete)
+    @BindView(R.id.btn_delete)
     Button btnDelete;
-    @Bind(R.id.btn_add_file)
+    @BindView(R.id.btn_add_file)
     Button btnAddFile;
-    @Bind(R.id.lv_file_drawer)
+    @BindView(R.id.lv_file_drawer)
     ListView lvFileDrawer;
 
     public static final int EXTERNAL_STORAGE_REQ_CODE = 10 ;
